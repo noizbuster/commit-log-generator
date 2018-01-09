@@ -5,9 +5,11 @@ import Vuetify from 'vuetify'
 import App from './App'
 import router from './router'
 import 'vuetify/dist/vuetify.min.css'
+import VueClipboard from 'vue-clipboard2'
 
 Vue.config.productionTip = false
 Vue.use(Vuetify)
+Vue.use(VueClipboard)
 
 /* eslint-disable no-new */
 new Vue({

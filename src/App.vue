@@ -26,22 +26,10 @@
     </v-navigation-drawer>
     <v-toolbar color="indigo" dark fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Commit Log Generator</v-toolbar-title>
     </v-toolbar>
     <v-content>
-      <v-container fluid fill-height>
-        <v-layout
-          justify-center
-          align-center
-        >
-          <v-tooltip right>
-            <v-btn icon large :href="source" target="_blank" slot="activator">
-              <v-icon large>code</v-icon>
-            </v-btn>
-            <span>Source</span>
-          </v-tooltip>
-        </v-layout>
-      </v-container>
+      <router-view class="view"></router-view>
     </v-content>
     <v-footer color="indigo" app>
       <span class="white--text">&copy; 2017</span>
@@ -52,7 +40,7 @@
 <script>
   export default {
     data: () => ({
-      drawer: null
+      drawer: false
     }),
     props: {
       source: String

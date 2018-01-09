@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
+    "vue-clipboard2": "0.0.8",
     "vue-router": "^3.0.1",
     "vuetify": "^0.17.6"
   },
@@ -37,7 +38,7 @@
     "chromedriver": "^2.27.2",
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^5.0.1",
-    "css-loader": "^0.28.0",
+    "css-loader": "^0.28.8",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
